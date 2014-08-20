@@ -1,0 +1,11 @@
+<h1>Select a Category:</h1>
+
+<ul>
+  
+  <% @allcategories.each do |link| %>
+    <li><a href="http://localhost:4567/recipes/<%=link.id%>"><%= link.recipe_type.titleize %></li>
+  <% end %>
+   
+</ul>
+
+<p><a href="http://localhost:4567/add_recipe">Add Recipe</p>
